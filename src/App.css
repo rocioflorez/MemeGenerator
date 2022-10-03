@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+body {
+    margin: 0;
+}
+  
+header{
+    position: relative;
+    top: 0;
+    text-align: center;
+    background-color: lightblue;
+    font-size: 20px;
+    height: 30px;
+    padding: 5px;
+    width: 100%;
+}
+  
+.formContainer{
+    margin: 50px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text{
+    box-sizing: border-box;
+    display: block;
+    padding: 10px;
+    width: 350px;
+    margin: auto;
+    margin-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.memeContainer{
+    position: relative;
+    width: 90%;
+    margin: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.memeImg{
+    max-width: 300px;
+    max-height: 300px;
+    margin: auto;
+    margin-top: 25px;
+    display: block;
+    box-shadow: 0px 0px 10px black;
 }
 
-.App-link {
-  color: #61dafb;
+.refreshBtn {
+    cursor: pointer;
+    display: block;
+    width: 350px;
+    padding: 10px;
+    margin: 30px auto;
+    margin-bottom: 15px;
+    color: black;
+    border: none;
+    border-radius: 3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.upperText, .bottomText {
+    position: absolute;
+    width: 80%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 15px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+      -2px 2px 0 #000, 0 2px 0 #000, 2px 0 0 #000, 0 -2px 0 #000, -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+  
+.upperText{
+    top: 0;
+}
+  
+.bottomText{
+    bottom: 20%;
+}
+  
+li{
+    list-style: none;
+}
+  
+footer{
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    background-color: lightblue;
+    font-size: 10px;
+    height: 15px;
+    padding: 5px;
+    width: 100%;
 }
